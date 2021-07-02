@@ -1,0 +1,289 @@
+#myBooks {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#myBooks .logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  max-width: 200px;
+}
+#myBooks .title {
+  padding: 5px 25px;
+  -webkit-box-shadow: 0 5px 5px rgb(119, 110, 110);
+          box-shadow: 0 5px 5px rgb(161, 157, 157);
+  background: #ebe8e8;
+  text-align: center;
+  font-weight: lighter;
+  font-size: min(6vw, 30px);
+}
+#myBooks h2 {
+  text-align: center;
+  font-weight: bolder;
+  margin: 3px;
+  font-size: min(4vw, 20px);
+}
+#myBooks hr {
+  width: 100%;
+  margin: 3px 0;
+}
+
+#myBooks .js_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#myBooks .js_div button {
+  border: none;
+  color: white;
+  padding: 8px;
+  width: 40%;
+  max-width: 240px;
+  border-radius: 3px;
+  margin: 3px 0;
+  font-size: min(3vw, 18px);
+}
+#myBooks .js_div .add_book_btn {
+  margin: 3px auto;
+  background-color: #0beb3b;
+}
+#myBooks .js_div .btn_recherche {
+  background-color: #190aec;
+}
+#myBooks .js_div .btn_annuler {
+  background-color: #ff3300;
+}
+#myBooks .js_div label {
+  font-size: min(4vw, 20px);
+}
+#myBooks .js_div input {
+  padding: 8px;
+  border: 1px solid rgb(10, 10, 10);
+  font-size: min(3vw, 20px);
+}
+#myBooks .nbr_results {
+  font-weight: bold;
+  margin: 5px 0px;
+  font-size: min(3vw, 18px);
+}
+#myBooks .result_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#myBooks .result_div [id^=book_card_] {
+  width: 49%;
+  background-color: lightgray;
+  border: 1px black solid;
+  margin-bottom: 3px;
+  font-size: min(2.5vw, 18.5px);
+}
+#myBooks .result_div [id^=book_card_] [id^=book_head_] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3px;
+}
+#myBooks .result_div [id^=book_card_] [id^=book_head_] [id^=bookTitle_] {
+  font-weight: bolder;
+}
+#myBooks .result_div [id^=book_card_] [id^=book_head_] img {
+  width: 11%;
+  height: 13.2%;
+  max-width: 30px;
+  max-height: 36px;
+}
+#myBooks .result_div [id^=book_card_] [class^=book_ID_] {
+  font-weight: bolder;
+  font-style: italic;
+  margin: 3px;
+}
+#myBooks .result_div [id^=book_card_] [class^=book_Author_] {
+  margin: 3px;
+}
+#myBooks .result_div [id^=book_card_] [class^=book_Description_] {
+  margin: 3px;
+}
+#myBooks .result_div [id^=book_card_] [class^=Image_] {
+  text-align: center;
+}
+#myBooks .result_div [id^=book_card_] [class^=Image_] img {
+  width: 60%;
+  max-width: 200px;
+}
+#myBooks .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+}
+#myBooks .navigation .precedent, #myBooks .navigation .suivant {
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: min(3vw, 18px);
+}
+#myBooks #content {
+  text-align: center;
+  font-weight: bolder;
+  margin: 3px;
+}
+#myBooks .list_poche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#myBooks .list_poche [id^=saved_card_] {
+  width: 49%;
+  background-color: #fac683;
+  border: 1px black solid;
+  margin-bottom: 3px;
+  font-size: min(2.5vw, 18.5px);
+}
+#myBooks .list_poche [id^=saved_card_] [id^=saved_book_head_] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3px;
+}
+#myBooks .list_poche [id^=saved_card_] [id^=saved_book_head_] [id^=saved_bookTitle_] {
+  font-weight: bolder;
+}
+#myBooks .list_poche [id^=saved_card_] [id^=saved_book_head_] img {
+  width: 11%;
+  height: 13.2%;
+  max-width: 30px;
+  max-height: 36px;
+}
+#myBooks .list_poche [id^=saved_card_] [id^=saved_book_ID_] {
+  font-weight: bolder;
+  font-style: italic;
+  margin: 3px;
+}
+#myBooks .list_poche [id^=saved_card_] [id^=saved_book_Author_] {
+  margin: 3px;
+}
+#myBooks .list_poche [id^=saved_card_] [id^=saved_book_Description_] {
+  margin: 3px;
+}
+#myBooks .list_poche [id^=saved_card_] [class^=saved_Image_] {
+  text-align: center;
+}
+#myBooks .list_poche [id^=saved_card_] [class^=saved_Image_] img {
+  width: 60%;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  body #myBooks .result_div [id^=book_card_] {
+    width: 47%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: min(1.7vw, 30px);
+  }
+  body #myBooks .result_div [id^=book_card_] [class^=Image_] {
+    text-align: center;
+  }
+  body #myBooks .result_div [id^=book_card_] [class^=Image_] img {
+    width: 25%;
+  }
+  body #myBooks .list_poche [id^=saved_card_] {
+    width: 47%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: min(1.7vw, 30px);
+  }
+  body #myBooks .list_poche [id^=saved_card_] [class^=saved_Image_] {
+    text-align: center;
+  }
+  body #myBooks .list_poche [id^=saved_card_] [class^=saved_Image_] img {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  body {
+    background-color: #faf4f4;
+    margin: 0 6% 0 6%;
+  }
+  body #myBooks {
+    margin: 0;
+    padding: 0 2% 0 2%;
+    background-color: white;
+  }
+  body #myBooks .result_div [id^=book_card_] {
+    width: 42%;
+    margin: 3% auto 3% auto;
+    font-size: min(0.8vw, 30px);
+  }
+  body #myBooks .result_div [id^=book_card_] [class^=Image_] {
+    text-align: center;
+  }
+  body #myBooks .result_div [id^=book_card_] [class^=Image_] img {
+    width: 25%;
+  }
+  body #myBooks .list_poche [id^=saved_card_] {
+    width: 42%;
+    margin: 3% auto 3% auto;
+    font-size: min(0.8vw, 30px);
+  }
+  body #myBooks .list_poche [id^=saved_card_] [class^=saved_Image_] {
+    text-align: center;
+  }
+  body #myBooks .list_poche [id^=saved_card_] [class^=saved_Image_] img {
+    width: 25%;
+  }
+}
+
